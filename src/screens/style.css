@@ -1,0 +1,143 @@
+.header{
+    width: 100%;
+    height: 570px;
+    background: rgb(148, 98, 189);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+nav ul li{
+    margin: 10px;
+}
+nav{
+    margin-top: 10px;
+}
+nav ul li a{
+    color: white;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bold;
+}
+.colorClass {
+    color: white;
+}
+.heading{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+}
+hr{
+    width: 30px;
+    border: 1.5px solid white;
+}
+.socialIcons{
+    height: 45px;
+    width: 45px;
+    border: 2px solid white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialIconsDiv{
+    display: flex;
+    flex-direction: row;
+    width: 370px;
+    justify-content: space-evenly;
+}
+.About{
+    width: 1100px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: -50px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.About div{
+    padding: 15px;
+    width: 320px;
+    height: 200px;
+    background: white;
+    box-shadow: 1px 0px 10px 0px #dccfcf;
+    border-radius: 5px;
+}
+.ServicesDiv{
+    padding: 20px;
+    /* height: 500px; */
+    background: rgb(148, 98, 189);
+    color: white;
+}
+.Services{
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.Services div{
+    width: 340px;
+    height: 200px;
+    margin-top: 40px;
+}
+.MyProjects{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.MyProjects nav ul li a{
+    color: black;
+    font-family: arial;
+}
+.MyProjects nav ul {
+    height: 50px;
+    /* background: rgb(224, 233, 224); */
+    width: 600px;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+.Projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.Projects div{
+    margin-top: 20px;
+}
+.QuoteDiv{
+    margin-top: 90px;
+    width: 100%;
+    background-image: url(../images/img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hiringDiv{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    background: white;
+    padding: 30px;
+    padding-top: 50px;
+}
+.ContactDiv{
+    /* height: 500px; */
+    padding: 20px;
+    background: rgb(148, 98, 189);
+    color: white;
+}
+.textfield{
+    color: white;
+    border-bottom-color: white;
+    width: 250px;
+    margin-left: 30px;
+}
