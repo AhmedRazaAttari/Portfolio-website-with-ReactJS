@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 import '../screens/style.css';
+import '../screens/MediaQueries.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faTv, faCode, faPencilAlt, faBookmark, faMagic, faTable, faQuoteRight, faQuoteLeft, faThumbsUp, faLocationArrow, faPhone, faEnvelope } from '@fortawesome/fontawesome-free-solid';
+import { faHome, faTv, faCode, faPencilAlt, faBookmark, faMagic, faTable, faQuoteRight, faQuoteLeft, faThumbsUp, faLocationArrow, faPhone, faEnvelope, faUser } from '@fortawesome/fontawesome-free-solid';
 import { faFacebookF, faTwitter, faGithub, faInstagram, faLinkedinIn, faAndroid, faWindows } from '@fortawesome/free-brands-svg-icons'
-import Img from '../images/black.jpg';
+import Img from '../images/AhmedRaza.jpg';
 import asd from '../images/asd.jpg';
+import MBL from '../images/MobilePhoneUI.jpg';
+import MBL2 from '../images/MobilePhoneUI2.jpg';
+import WEB from '../images/WEB.jpg';
+import WEB2 from '../images/WEB2.jpg';
+import DESKTOP from '../images/DESKTOP.jpg';
+import DESKTOP2 from '../images/DESKTOP2.jpg';
 import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 
@@ -30,7 +37,9 @@ class Home extends Component {
                 </ul>
             </nav>
             <br />
-            <img src={Img} width="140" height="140" style={{ borderRadius: 100 }} />
+            <div className="ProfilePic">
+                {/* <img src={Img} height="180" style={{ borderRadius: 100 }} /> */}
+            </div>
             <b className="colorClass heading" style={{ fontSize: 55, fontWeight: "lighter" }}>Ahmed Raza</b>
             <p className="colorClass heading" style={{ fontSize: 22 }}>MERN STACK DEVELOPER</p>
             <hr />
@@ -57,21 +66,40 @@ class Home extends Component {
 
     About() {
         return <div className="AboutDiv">
-            <br /><br />
-            <h1>ABOUT ME</h1>
-            <div className="About">
-                <div>
-                    <FontAwesomeIcon icon={faTv} size="2x" />
-                    <p style={{ fontSize: 26 }}>Freelancer</p>
+            
+            <div style={{ height: 'auto', width: 400, textAlign: "left", padding: 20 }}>
+                <div style={{ display: "flex", alignItems: "center", color: "orange" }}>
+                    <h2><FontAwesomeIcon icon={faUser} /></h2> <h2 style={{ marginLeft: 10 }}>About Me</h2>
                 </div>
-                <div style={{ background: "orange" }}>
-                    <FontAwesomeIcon icon={faCode} size="2x" />
-                    <h2>Developer</h2>
-                </div>
-                <div>
-                    <FontAwesomeIcon icon={faPencilAlt} size="2x" />
-                    <p style={{ fontSize: 26 }}>Designer</p>
-                </div>
+                <br />
+                <b style={{ color: "grey" }}>I am a passionate Front-end and backend developer who has been working in this field for more than 3 years now.<br /><br />
+                    You have an idea, you need someone to bring it ot life. Or you already have a product that needs to be redined to meet the demand of 2017 users!. This is where i come in! With my knowledge and creativity. I can take your idea, your product to the next level. Let's have a chat and discuss your idea!</b>
+            </div>
+            <div style={{ height: "auto", width: 500, padding: 10, textAlign: "left" }}>
+                <h2 style={{ color: "orange" }}>DEVELOPMENT SKILLS</h2>
+                <br />
+                <b>HTML</b>
+                <hr style={{ width: "90%", borderWidth: 2, borderColor: "olive", marginLeft: 0 }} />
+                <br />
+                <b>CSS</b>
+                <hr style={{ width: "85%", borderWidth: 2, borderColor: "orange", marginLeft: 0 }} />
+                <br />
+                <b>JAVASCRIPT</b>
+                <hr style={{ width: "80%", borderWidth: 2, borderColor: "skyblue", marginLeft: 0 }} />
+                <br />
+                <b>REACT</b>
+                <hr style={{ width: "85%", borderWidth: 2, borderColor: "blue", marginLeft: 0 }} />
+                <br />
+                <b>REACT NATIVE</b>
+                <hr style={{ width: "88%", borderWidth: 2, borderColor: "skyblue", marginLeft: 0 }} />
+                <br />
+                <b>PHP</b>
+                <hr style={{ width: "60%", borderWidth: 2, borderColor: "green", marginLeft: 0 }} />
+                <br />
+                <b>C#</b>
+                <hr style={{ width: "68%", borderWidth: 2, borderColor: "lightgreen", marginLeft: 0 }} />
+                
+
             </div>
         </div>
     }
@@ -85,37 +113,37 @@ class Home extends Component {
                     <FontAwesomeIcon icon={faAndroid} size="3x" />
                     <br /><br />
                     <b style={{ fontSize: 25, fontWeight: "lighter", fontFamily: 'arial' }}>Mobile Apps</b>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    <p>I am professionate Mobile app developer. I can design and develop custom android and IOS app with full of features and i also done some project in past</p>
                 </div>
                 <div>
                     <FontAwesomeIcon icon={faCode} size="3x" />
                     <br /><br />
-                    <b style={{ fontSize: 25, fontWeight: "lighter", fontFamily: 'arial' }}>Web Design</b>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    <b style={{ fontSize: 25, fontWeight: "lighter", fontFamily: 'arial' }}>Web Design & Development</b>
+                    <p>I'm a free thinker, unique creator and a business lover. I have a passion for web designing and web development, since than, I am working on Web development</p>
                 </div>
                 <div>
                     <FontAwesomeIcon icon={faMagic} size="3x" />
                     <br /><br />
                     <b style={{ fontSize: 25, fontWeight: "lighter", fontFamily: 'arial' }}>UX / UI Design</b>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    <p>I've worked on UX and UI designs for web and mobile apps  - I use adobe Illustrator for designing screens and layouts (UI) to ensure the quality of screens and make it look real even on the big screens.</p>
                 </div>
                 <div>
                     <FontAwesomeIcon icon={faWindows} size="3x" />
                     <br /><br />
                     <b style={{ fontSize: 25, fontWeight: "lighter", fontFamily: 'arial' }}>Desktop Applications</b>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    <p>I can develop any program using visual basic or c sharp according to your requirement. also  i can develop applications to work with internet, web sites, such as  mail applications and database applications.</p>
                 </div>
                 <div>
                     <FontAwesomeIcon icon={faTable} size="3x" />
                     <br /><br />
                     <b style={{ fontSize: 25, fontWeight: "lighter", fontFamily: 'arial' }}>Business Softwares</b>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    <p>I can develop business software that can take business on the new stage like Accouting Software that can help you to record entries and save data on cloud</p>
                 </div>
                 <div>
                     <FontAwesomeIcon icon={faTv} size="3x" />
                     <br /><br />
                     <b style={{ fontSize: 25, fontWeight: "lighter", fontFamily: 'arial' }}>Web Applications</b>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    <p>I can develop small and huge web applications for personal and professional use.</p>
                 </div>
 
             </div>
@@ -125,7 +153,7 @@ class Home extends Component {
 
     Projects() {
         return <div className="MyProjects">
-            <br /><br /><br />
+            <br />
             <p style={{ fontSize: 32 }}>MY <b>PROJECTS</b></p>
             <nav>
                 <ul>
@@ -136,16 +164,21 @@ class Home extends Component {
                     <li><a href="#">Graphics</a></li>
                 </ul>
             </nav>
-            <br /><br /><br /><br />
-            <div className="Projects">
-                <div><img src={asd} width="390" height="300" /></div>
-                <div><img src={asd} width="390" height="300" /></div>
-                <div><img src={asd} width="390" height="300" /></div>
-                <div><img src={asd} width="390" height="300" /></div>
-                <div><img src={asd} width="390" height="300" /></div>
-                <div><img src={asd} width="390" height="300" /></div>
-            </div>
             <br /><br />
+            <div className="Projects">
+                <div><img src={MBL} width="300" height="250" /></div>
+                <div><img src={MBL2} width="300" height="250" /></div>
+                <div><img src={WEB} width="300" height="250" /></div>
+                <div><img src={WEB2} width="300" height="250" /></div>
+                <div><img src={DESKTOP} width="300" height="250" /></div>
+                <div><img src={DESKTOP2} width="300" height="250" /></div>
+                <div><img src={WEB2} width="300" height="250" /></div>
+                <div><img src={DESKTOP} width="300" height="250" /></div>
+                <div><img src={DESKTOP2} width="300" height="250" /></div>
+            </div>
+            <br /><br /><br />
+
+            <button style={{ width: 90, height: 40, margin: '0 auto', background: 'orange', border: 'none', boxShadow: "#e9e6e6 2px -1px 20px 4px" }}>Load More</button>
         </div>
     }
 
@@ -178,8 +211,28 @@ class Home extends Component {
             <h3>Just Drop A Message Below And I'll Get In Touch!</h3>
             <hr />
             <br /><br />
-            <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", width: 900, margin: '0 auto', }}>
-                <div style={{ display: "flex", justifyContent: "space-between", flexDirection: "column" }}>
+            {/* <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", width: 900, margin: '0 auto', }}>
+                
+                
+            </div> */}
+            <div style={{ display: "flex", justifyContent: "space-evenly", width: 900, margin : '0 auto'  }}>
+                <div>
+                    <FontAwesomeIcon icon={faEnvelope} size="2x" />
+                    <h2>Queries</h2>
+                    <h4>Ahmedrazaattari536@gmail.com</h4>
+                </div>
+                <div>
+                    <FontAwesomeIcon icon={faPhone} size="2x" />
+                    <h2>CALL</h2>
+                    <h4>+92 - 312 - 2849536</h4>
+                </div>
+                <div>
+
+                    
+                </div>
+            </div>
+            <br /><br />
+            <div style={{ display: "flex", justifyContent: "center",alignItems : "center" ,flexDirection: "column", width: 700, margin : '0 auto' }}>
                     <div style={{ display: "flex", width: 550, justifyContent: "space-between" }}>
                         <TextField
                             id="standard-search"
@@ -213,23 +266,28 @@ class Home extends Component {
                         style={{ width: 550 }}
                     />
                 </div>
-                <div style={{ flexDirection: "column" }}>
-                    <div>
-                        <FontAwesomeIcon icon={faLocationArrow} size="2x" />
-                        <h4>Karachi, Pakistan</h4>
-                    </div>
-                    <div>
-                        <FontAwesomeIcon icon={faPhone} size="2x" />
-                        <h4>+92 - 312 - 2849536</h4>
-                    </div>
-                    <div>
-                        <FontAwesomeIcon icon={faEnvelope} size="2x" />
-                        <h4>Ahmedrazaattari536@gmail.com</h4>
-                    </div>
+            <br /><br />
+            <button style={{ border: "none", width: 170, height: 50, background: "orange", fontSize: 16, color: "white", cursor: "pointer" }}>Send Message</button>
+            <br /><br /><br /><br />
+            <div className="socialIconsDiv" style={{display : "flex", justifyContent : "space-between", flex : 1, alignItems : "center", width : 300, margin : '0 auto'}}>
+                <div className="socialIcons">
+                    <FontAwesomeIcon icon={faFacebookF} color="white" style={{ fontSize: 22 }} />
+                </div>
+                <div className="socialIcons">
+                    <FontAwesomeIcon icon={faTwitter} color="white" style={{ fontSize: 22 }} />
+                </div>
+                <div className="socialIcons">
+                    <FontAwesomeIcon icon={faGithub} color="white" style={{ fontSize: 22 }} />
+                </div>
+                <div className="socialIcons">
+                    <FontAwesomeIcon icon={faInstagram} color="white" style={{ fontSize: 22 }} />
+                </div>
+                <div className="socialIcons">
+                    <FontAwesomeIcon icon={faLinkedinIn} color="white" style={{ fontSize: 22 }} />
                 </div>
             </div>
             <br /><br />
-            <button style={{border : "none", width : 150, height: 50, background : "orange", fontSize : 16, color : "white", cursor : "pointer"}}>Send <FontAwesomeIcon icon={faLocationArrow} size="1x"/></button>
+            <b>© Copyright 2020 Develop By Ahmed Raza</b>
         </div>
     }
 
